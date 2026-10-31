@@ -9,3 +9,11 @@ authors:
 date-released: 2026-10-31
 version: "1.0"
 license: CC-BY-4.0
+doi: "10.5281/zenodo.23847500"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23847500"
+    description: "Zenodo preprint DOI for version 1.0 (all-versions DOI: 10.5281/zenodo.23847499)"
+  - type: url
+    value: "https://zenodo.org/records/23847500"
+    description: "Zenodo record page"

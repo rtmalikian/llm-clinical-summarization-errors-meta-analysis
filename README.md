@@ -2,6 +2,8 @@
 
 [![Download PDF](https://img.shields.io/badge/Download-PDF-red?style=for-the-badge)](https://github.com/rtmalikian/llm-clinical-summarization-errors-meta-analysis/raw/main/manuscript.pdf)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23847500.svg)](https://doi.org/10.5281/zenodo.23847500)
+
 **[Click here to download the PDF](https://github.com/rtmalikian/llm-clinical-summarization-errors-meta-analysis/raw/main/manuscript.pdf)**
 
 One click — no sign-up, no paywall.
@@ -16,7 +18,7 @@ Cochrane-level systematic review and meta-analysis (Cochrane Handbook v6.5 struc
 
 Reading page for non-GitHub users: https://rtmalikian.github.io/llm-clinical-summarization-errors-meta-analysis/
 
-Preprint: Zenodo deposit pending; the DOI will be added here when the record is live.
+**Preprint:** Zenodo, DOI [10.5281/zenodo.23847500](https://doi.org/10.5281/zenodo.23847500), record https://zenodo.org/records/23847500.
 
 ## Abstract
 
@@ -91,7 +93,7 @@ Funding: none. Competing interests: none; the review was conducted fully indepen
 
 ## How to cite
 
-Malikian R. Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary. 2026. Zenodo DOI to be added on deposit.
+Malikian R. Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary. 2026. Zenodo. DOI: [10.5281/zenodo.23847500](https://doi.org/10.5281/zenodo.23847500).
 
 ## Licence
 
