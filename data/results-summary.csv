@@ -1,0 +1,20 @@
+pool,units,studies,total_n,total_x_crude,pooled,ci_lo,ci_hi,tau2,I2,pred_int_lo,pred_int_hi,model,handchecked
+any_error_supplementary,5,4,323,198,0.6055,0.2984,0.8471,1.9649,95.0,0.0689,0.9696,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+omission,16,7,1011,323,0.2074,0.1147,0.3458,1.8444,94.6,0.0164,0.8042,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+fabrication_addition,8,6,1226,787,0.1756,0.0294,0.5996,7.1019,98.6,0.0008,0.9825,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+inaccuracy,5,3,500,153,0.2786,0.1455,0.4668,0.8098,93.4,0.0524,0.7296,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+omission_excl_R0354,8,6,611,281,0.4060,0.2197,0.6239,1.4924,95.5,0.0505,0.8978,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+any_error_supplementary_S1_severity_graded,4,3,273,191,0.7253,0.4872,0.8801,0.9173,90.6,0.2375,0.9573,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+any_error_supplementary_S2_excl_preprints,5,4,323,198,0.6055,0.2984,0.8471,1.9649,95.0,0.0689,0.9696,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+any_error_supplementary_S3_excl_high_rob,2,1,200,157,0.8074,0.5952,0.9228,0.4951,86.7,,,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+omission_S1_severity_graded,6,4,511,239,0.4193,0.2199,0.6490,1.2412,95.3,0.0628,0.8861,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+omission_S2_excl_preprints,6,5,411,165,0.3421,0.1776,0.5559,1.0355,93.1,0.0555,0.8213,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+omission_S3_excl_high_rob,4,2,400,213,0.5501,0.3197,0.7609,0.9006,94.8,0.1312,0.9083,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+fabrication_addition_S2_excl_preprints,5,4,355,109,0.0969,0.0130,0.4655,4.4805,97.1,0.0010,0.9180,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+fabrication_addition_S3_excl_high_rob,4,2,400,130,0.2589,0.0820,0.5774,1.8420,96.7,0.0173,0.8741,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+inaccuracy_S2_excl_preprints,3,2,300,66,0.2030,0.1070,0.3513,0.3735,85.0,0.0583,0.5120,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+inaccuracy_S3_excl_high_rob,4,2,400,133,0.3010,0.1377,0.5372,0.9617,94.5,0.0472,0.7892,"Random-effects GLMM, logit link, binomial likelihood, ML, Python scipy hand-written AGHQ (R metafor unavailable; disclosed fallback)",yes
+primary_clinically_significant_single_unit,1,1,62,13,0.2097,0.1166,0.3318,,,,,"Single unit, exact Clopper-Pearson CI, no pooled estimate",yes
+harm_at_least_moderate_single_unit,1,1,100,1,0.0100,0.0003,0.0545,,,,,"Single unit, exact Clopper-Pearson CI, no pooled estimate",yes
+errors_per_summary,2,2,36,,,,,,,,,Not pooled: only one unit (R0123-1) reports a dispersion measure; R0429-1 is per statement and excluded,n/a narrative
+llm_vs_human_contrast,0,0,0,,,,,,,,,Not fittable: no matched LLM and human per-summary error counts,yes (verified no matched pairs)

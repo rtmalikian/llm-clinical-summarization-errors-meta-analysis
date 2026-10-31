@@ -1,0 +1,32 @@
+record_id,study_label,reporting_class,what_was_reported_instead_of_per_summary_counts
+R0231,Williams 2025 (JAMA Intern Med),Means per summary,"Mean 2.91 (SD 2.54) errors per LLM summary vs 1.82 (1.94) physician; per-type means 0.93 inaccuracies, 1.75 omissions, 0.23 hallucinations. Worked example, see text"
+R0082,Williams 2024 (medRxiv preprint of R0231),Means per summary,Same study and results as R0231 in preprint form
+R0336,Osborne 2026,Means per summary,138 error annotations across both summary types; means only: LLM 0.42 (SD 0.98) vs human 0.73 (1.34) errors per summary
+R0005,Van Veen 2023 (preprint of R0028),Rating scores and preference,"Reader preference: human preferred 19 percent, GPT-4 non-inferior 45 percent, preferred 36 percent; comparative correctness ratings"
+R0028,Van Veen 2024 (Nat Med),Rating scores and preference,"Same reader study as R0005, journal version"
+R0033,Caterson 2024,Rating scores and preference,Accuracy rated 0 to 10 (8.7 vs 7.3); omissions and insertions described without counts
+R0097,Clough 2024,Rating scores and preference,100 percent of 25 summaries judged acceptable quality; mean compliance 97 percent with minimum dataset
+R0151,Oliveira 2025,Rating scores and preference,User feedback percentages per evaluation response (for example 29.6 percent incorrect); no count of summaries with errors
+R0165,Takayama 2025,Rating scores and preference,"Expert domain scores, including a Presence of Hallucinations domain score, over 48 summaries and 48 referrals"
+R0169,Vasilev 2025,Rating scores and preference,Binary per-summary hallucination ratings converted to 1 or 5 point scores; only rounded mean scores published (3.8 plus or minus 1.9)
+R0232,Golchini 2025,Rating scores and preference,"5-point Likert means for accuracy, completeness and utility over 99 encounters; preference 50.5 percent LLM; errors discussed qualitatively"
+R0366,Han 2026,Rating scores and preference,"4-point Likert ratings by physicians and parents over 50 summaries, omission as a rating item; no error counts"
+R0455,Carenzo 2026,Rating scores and preference,Global confidence rating (8 of 9 positive) and section-level completeness and accuracy ratings
+R0092,Chuang 2024,Similarity and automatic metrics,"ROUGE, BERTScore and prompt variance; no human error assessment at summary level"
+R0170,Dorfner 2025,Similarity and automatic metrics,Benchmark accuracy percentages per task; summarisation scored by task accuracy
+R0209,Kruse 2025,Similarity and automatic metrics,Automatic metrics plus qualitative expert review of 10 output pairs scored on criteria; no counts
+R0262,Kruse 2025 (preprint of R0209),Similarity and automatic metrics,ROUGE and BERTScore; Likert criteria on a sampled subset; error analysis stated as not intended to yield quantitative results
+R0349,Zhao 2026,Similarity and automatic metrics,"ROUGE, BERTScore, BLEU, Jaro-Winkler, authorship classification; preference testing; hallucinations qualitative"
+R0399,Akinwumi 2026,Similarity and automatic metrics,ROUGE-L about 0.43 and BERTScore 0.61; error rates quoted only from other studies
+R0023,Urquhart 2024,Error-instance counts,"4 hallucination instances in total across 18 test summaries, not distributed by summary; event capture per clinical event (41.5 percent)"
+R0096,Osborne 2024,Error-instance counts,Fabrication and omission instances over 28 human and AI summaries combined (omissions 13 vs 16); denominator mixes human and AI summaries
+R0141,Shemtob 2025 (preprint of R0142),Error-instance counts,11 incidences of hallucination or inaccuracy across 70 AI summaries; incidences are not summaries with errors
+R0142,Shemtob 2025 (JAMIA Open),Error-instance counts,"Same study as R0141, journal version; Likert agreement scales alongside"
+R0372,Kahl 2026,Error-instance counts,"Coded feedback comments over 147 summaries (omissions 46, hallucinations 5, themes); multiple comments per summary possible"
+R0414,Lyo 2026,Error-instance counts,25 hallucination instances across 90 cases; Likert ratings and preference alongside
+R0116,Wang 2025,Item or field-level counts,"Extraction accuracy 96.5 percent, precision, recall and F1 per extracted data item across 23 records"
+R0184,Liang 2025,Item or field-level counts,"False positives counted per question item (29 returned, 8 confirmed); summary quality on a 5-point scale"
+R0202,Indrakanti 2025,Item or field-level counts,True and false positives per data point by section; three incomplete cases and one wrong case mentioned without a combinable union
+R0356,Singh 2026,Item or field-level counts,Errors per field-dimension pair over 401 admissions (omissions 1010 in LLM summaries); per-patient mean burden 2.484 falling to 1.807
+R0374,Deschepper 2026,Item or field-level counts,Percentages of item responses across 61 layout and 33 content items and 31 raters; denominators are item responses
+R0422,Grolleau 2026 (framework),Item or field-level counts,Fact-level presence proportions (48 to 65 percent) and LLM-jury agreement with a physician panel (kappa 81 and 75 percent)

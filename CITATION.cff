@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this review, please cite it as below."
+title: "Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary"
+authors:
+  - family-names: Malikian
+    given-names: Raphael
+    orcid: https://orcid.org/0009-0008-4326-4205
+    affiliation: "Independent researcher, Palmdale, CA, USA"
+date-released: 2026-10-31
+version: "1.0"
+license: CC-BY-4.0

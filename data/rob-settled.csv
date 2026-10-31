@@ -1,0 +1,12 @@
+study_id,domain_1_source_data_selection,domain_2_index_generation_process,domain_3_reference_standard_and_error_adjudication,domain_4_flow_and_timing,overall_judgement,settled_basis
+R0047,High,Some concerns,Some concerns,Some concerns,High,"adjudicated: D3, D4; D1 and D2 agreed"
+R0123,High,Some concerns,High,Low,High,"adjudicated: D1, D4; D2 and D3 agreed"
+R0144,High,Some concerns,High,Some concerns,High,"adjudicated: D4; D1, D2 and D3 agreed"
+R0167,Some concerns,Some concerns,Some concerns,Low,Some concerns,"adjudicated: D1; D2, D3 and D4 agreed; overall confirmed by adjudicator (see rob-adjudication-notes.md)"
+R0301,Some concerns,Some concerns,High,High,High,"adjudicated: D1; D2, D3 and D4 agreed"
+R0354,Some concerns,Some concerns,High,Low,High,agreed
+R0370,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,"agreed on all domains; overall confirmed by adjudicator (see rob-adjudication-notes.md)"
+R0391,Some concerns,No information,High,Some concerns,High,"adjudicated: D1, D2, D3; D4 agreed"
+R0429,Some concerns,Some concerns,High,Some concerns,High,"adjudicated: D4; D1, D2 and D3 agreed"
+R0438,Low,Some concerns,High,High,High,agreed
+CC2-03,Some concerns,Some concerns,No information,Low,High,"adjudicated: D1; D2, D3 and D4 agreed; overall High follows from Domain 3 at No information under the form overall rule"
