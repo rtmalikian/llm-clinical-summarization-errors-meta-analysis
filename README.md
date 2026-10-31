@@ -14,9 +14,9 @@ Raphael Malikian. Independent researcher, Palmdale, CA, USA. ORCID: [0009-0008-4
 
 Cochrane-level systematic review and meta-analysis (Cochrane Handbook v6.5 structure; this is not a Cochrane review and was not submitted to Cochrane). Researched and written by an LLM research team under one accountable human author. The author is a healthcare founder and operator who bootstrapped and ran a direct primary care clinic as CEO, now building clinical AI.
 
-Reading page for non-GitHub users: [PAGES_URL_TO_FILL]
+Reading page for non-GitHub users: https://rtmalikian.github.io/llm-clinical-summarization-errors-meta-analysis/
 
-Preprint: [ZENODO_DOI_TO_FILL]
+Preprint: Zenodo deposit pending; the DOI will be added here when the record is live.
 
 ## Abstract
 
@@ -91,7 +91,7 @@ Funding: none. Competing interests: none; the review was conducted fully indepen
 
 ## How to cite
 
-Malikian R. Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary. 2026. [ZENODO_DOI_TO_FILL]
+Malikian R. Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary. 2026. Zenodo DOI to be added on deposit.
 
 ## Licence
 
