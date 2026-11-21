@@ -10,7 +10,7 @@ import re
 
 import markdown
 
-CONFIG = {'repo': 'llm-clinical-summarization-errors-meta-analysis', 'title': 'Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary', 'subtitle': 'A Cochrane-level systematic review and meta-analysis', 'doi': '10.5281/zenodo.23847500', 'published': '31 October 2026', 'published_iso': '2026/10/31', 'dc_date': '2026-10-31', 'version': 'Version 1.0', 'topic': 'Clinical AI Safety', 'bibkey': 'llmsummarization', 'has_docx': False, 'licence': 'Creative Commons Attribution 4.0 International (CC BY 4.0)', 'licence_sentence': 'This is an open access article distributed under the terms of the Creative Commons Attribution 4.0 International Licence (CC BY 4.0), which permits use, distribution, and reproduction in any medium, provided the original author and source are credited. This review makes no clinical or medication recommendation.', 'keywords': ['large language models', 'clinical summarization', 'discharge summaries', 'medical errors', 'omissions', 'fabrications', 'hallucination', 'patient safety', 'clinical documentation', 'systematic review', 'meta-analysis', 'GRADE', 'PRISMA'], 'registration': 'No PROSPERO registration number was issued for this review; a PROSPERO-ready form was prepared on 31 October 2026, before screening closed, and none is claimed.', 'key_findings': ['11 studies (22 arms: 21 LLM, 1 human) included, from 991 records found.', 'The primary outcome could not be pooled: only 1 of the 11 studies reported the proportion of summaries with at least one clinically significant error (13 of 62 summaries, 21.0%).', 'By error type: omissions pooled at 20.7% of summaries, fabrication or addition at 17.6%, inaccuracy at 27.9%.', 'Of 48 reports assessed in full, 31 (65%) reported no extractable per-summary error count at all.', 'Certainty was rated very low for every rateable outcome (GRADE).']}
+CONFIG = {'repo': 'llm-clinical-summarization-errors-meta-analysis', 'title': 'Clinically Significant Errors in Large Language Model-Generated Clinical Summaries: A Systematic Review and Meta-analysis of Omissions, Inaccuracies and Fabrications per Summary', 'subtitle': 'A Cochrane-level systematic review and meta-analysis', 'doi': '10.5281/zenodo.23847500', 'published': '31 October 2026', 'published_iso': '2026/10/31', 'dc_date': '2026-10-31', 'version': 'Version 1.0', 'topic': 'Clinical AI Safety', 'bibkey': 'llmsummarization', 'issue': 2, 'pages_range': '78–117', 'has_docx': False, 'licence': 'Creative Commons Attribution 4.0 International (CC BY 4.0)', 'licence_sentence': 'This is an open access article distributed under the terms of the Creative Commons Attribution 4.0 International Licence (CC BY 4.0), which permits use, distribution, and reproduction in any medium, provided the original author and source are credited. This review makes no clinical or medication recommendation.', 'keywords': ['large language models', 'clinical summarization', 'discharge summaries', 'medical errors', 'omissions', 'fabrications', 'hallucination', 'patient safety', 'clinical documentation', 'systematic review', 'meta-analysis', 'GRADE', 'PRISMA'], 'registration': 'No PROSPERO registration number was issued for this review; a PROSPERO-ready form was prepared on 31 October 2026, before screening closed, and none is claimed.', 'key_findings': ['11 studies (22 arms: 21 LLM, 1 human) included, from 991 records found.', 'The primary outcome could not be pooled: only 1 of the 11 studies reported the proportion of summaries with at least one clinically significant error (13 of 62 summaries, 21.0%).', 'By error type: omissions pooled at 20.7% of summaries, fabrication or addition at 17.6%, inaccuracy at 27.9%.', 'Of 48 reports assessed in full, 31 (65%) reported no extractable per-summary error count at all.', 'Certainty was rated very low for every rateable outcome (GRADE).']}
 
 TITLE = CONFIG["title"]
 SUBTITLE = CONFIG["subtitle"]
@@ -33,25 +33,38 @@ VERSION = CONFIG["version"]
 KEYWORDS = CONFIG["keywords"]
 LICENCE = CONFIG["licence"]
 LICENCE_SENTENCE = CONFIG["licence_sentence"]
-SERIES = "Systematic Reviews"
+SERIES = "First Contact"
+JOURNAL = "https://rtmalikian.github.io/first-contact/"
+JOURNAL_FULL = "First Contact — Open Journal of Clinical AI and Primary Care Evidence Synthesis"
+ISSUE = CONFIG["issue"]
+PAGES_RANGE = CONFIG["pages_range"]
+JOURNAL_CIT = f"First Contact. 2026;1({ISSUE}):{PAGES_RANGE}"
 TOPIC = CONFIG["topic"]
 HAS_DOCX = CONFIG["has_docx"]
 REGISTRATION = CONFIG["registration"]
 ARTICLE_INFO_EXTRA = CONFIG.get("article_info_extra", "")
 KEY_FINDINGS = CONFIG.get("key_findings", [])
 
-CITATION = f"Malikian R. {TITLE}. {VERSION}; 2026. DOI: {DOI}"
+CITATION = f"Malikian R. {TITLE}. {JOURNAL_CIT}. DOI: {DOI}"
 BIBTEX = f"""@misc{{malikian2026{CONFIG['bibkey']},
   author       = {{Malikian, Raphael}},
   title        = {{{TITLE}}},
   year         = {{2026}},
+  journal      = {{First Contact}},
+  volume       = {{1}},
+  number       = {{{ISSUE}}},
+  pages        = {{{PAGES_RANGE}}},
   publisher    = {{Zenodo}},
   doi          = {{{DOI}}},
   url          = {{{DOI_URL}}},
   note         = {{Cochrane-level systematic review and meta-analysis}}
 }}"""
-RIS = f"""TY  - GEN
+RIS = f"""TY  - JOUR
 AU  - Malikian, Raphael
+JO  - First Contact
+VL  - 1
+IS  - {ISSUE}
+SP  - {PAGES_RANGE.split(chr(8211))[0] if chr(8211) in PAGES_RANGE else PAGES_RANGE}
 TI  - {TITLE}
 PY  - 2026
 DO  - {DOI}
@@ -255,16 +268,17 @@ footer .seriesline{{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter
 <body>
 <div class="masthead"><div class="wrap">
 <div class="wordmark">{SERIES}</div>
-<div class="mast-sub">Raphael Malikian · Cochrane-Level Evidence Syntheses</div>
+<div class="mast-sub">Open Journal of Clinical AI and Primary Care Evidence Synthesis · Editor: Raphael Malikian</div>
 </div></div>
 <nav class="journalnav"><div class="wrap">
 <a href="{HUB}#reviews">Browse</a>
 <a href="{HUB}#method">About</a>
+<a href="{JOURNAL}">Journal Home</a>
 <a href="{HUB}">Systematic Reviews Hub</a>
 <a href="{REPO}">GitHub</a>
 </div></nav>
 <div class="wrap">
-<p class="crumb"><a href="{HUB}">Systematic Reviews Hub</a> &rsaquo; {TOPIC} &rsaquo; Systematic Review</p>
+<p class="crumb"><a href="{JOURNAL}">First Contact</a> &rsaquo; {TOPIC} &rsaquo; Systematic Review</p>
 <div class="typerow"><span class="arttype">{ARTICLE_TYPE}</span><span class="oa">Open Access</span></div>
 <header class="article-head">
 <h1>{html.escape(TITLE)}</h1>
@@ -273,7 +287,7 @@ footer .seriesline{{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter
 <p class="affil"><sup>1</sup> {AFFIL}</p>
 <p class="corr">Corresponding author: {AUTHOR}, <a href="mailto:{EMAIL}">{EMAIL}</a> · ORCID <a href="https://orcid.org/{ORCID}">{ORCID}</a></p>
 <p class="publine">Published: {PUBLISHED} &middot; {VERSION}</p>
-<p class="citeline">Malikian R. {TITLE}. {VERSION}; 2026. DOI: <a href="{DOI_URL}">{DOI_URL}</a></p>
+<p class="citeline">Malikian R. {TITLE}. {JOURNAL_CIT}. DOI: <a href="{DOI_URL}">{DOI_URL}</a></p>
 </header>
 <div class="actions">
 <a class="primary" href="{REPO}/raw/main/manuscript.pdf">Download PDF</a>
@@ -330,6 +344,7 @@ footer .seriesline{{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter
 <ul>
 <li><a href="{REPO}">GitHub repository</a></li>
 <li><a href="{ZENODO_RECORD}">Zenodo record</a> (DOI: <a href="{DOI_URL}">{DOI}</a>)</li>
+<li><a href="{JOURNAL}">Journal home — First Contact</a></li>
 <li><a href="{HUB}">Systematic reviews hub</a></li>
 <li><a href="https://orcid.org/{ORCID}">ORCID</a></li>
 </ul>
@@ -339,7 +354,7 @@ footer .seriesline{{font-family:Helvetica,Arial,sans-serif;font-size:12px;letter
 <footer>
 <p>{LICENCE_SENTENCE}</p>
 <p>© 2026 {AUTHOR}. DOI: <a href="{DOI_URL}">{DOI_URL}</a></p>
-<p class="seriesline">{SERIES} — Raphael Malikian · Cochrane-Level Evidence Syntheses</p>
+<p class="seriesline">{JOURNAL_FULL} · Editor: Raphael Malikian</p>
 </footer>
 </div>
 </body>
